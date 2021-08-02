@@ -16,6 +16,7 @@ function bookList(){
     const bookNameList = [{name:"shiva trilogy", rating:"5/5"},{name:"2shiva trilogy", rating: "5/5"},{name:"3shiva trilogy", rating: "5/5"}];
     
     // let printList= JSON.stringify(bookNameList);
+    listItems.innerHTML = "";
    bookNameList.map((item)=>{
     newLi.appendChild(document.createTextNode(item.name +"("+ item.rating +")"));
 
@@ -27,6 +28,7 @@ function movieList(){
     var newLi = document.createElement("li");
     showList.innerHTML= ("working movie");
     const movieNameList=[{name:"American Sniper",rating:"5/5"},{name:"American Sniper",rating:"5/5"},{name:"American Sniper",rating:"5/5"}]
+    listItems.innerHTML = "";
     movieNameList.map((item)=>{
         newLi.appendChild(document.createTextNode(item.name +"("+ item.rating +")"));
 
@@ -37,6 +39,7 @@ function animeList(){
     var newLi = document.createElement("li");
     showList.innerHTML = ("working anime");
     const animeNameList=[{name:"Konosuba",rating:"5/5"},{name:"One Peice",rating:"5/5"},{name:"Naruto",rating:"5/5"}]
+    listItems.innerHTML = "";
     animeNameList.map((item)=>{
         newLi.appendChild(document.createTextNode(item.name +"("+ item.rating +")"));
 
